@@ -2,7 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap');
+
+@font-face {
+  font-family: 'Capture';
+  src: url('/fonts/capture.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+```
+
+**Paso 4 — Cambiá `tailwind.config.js`**
+
+Reemplazá:
+```
+bebas: ['Black Ops One', 'sans-serif'],
+```
+
+Por:
+```
+bebas: ['Capture', 'sans-serif'],
 
 @layer base {
   body {
