@@ -11,18 +11,6 @@
   font-style: normal;
   font-display: swap;
 }
-```
-
-**Paso 4 — Cambiá `tailwind.config.js`**
-
-Reemplazá:
-```
-bebas: ['Black Ops One', 'sans-serif'],
-```
-
-Por:
-```
-bebas: ['Capture', 'sans-serif'],
 
 @layer base {
   body {
