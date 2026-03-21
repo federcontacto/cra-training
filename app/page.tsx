@@ -4,7 +4,6 @@ import { Navbar } from '@/components/landing/navbar';
 import { Hero } from '@/components/landing/hero';
 import { Marquee } from '@/components/landing/marquee';
 import { About } from '@/components/landing/about';
-import { Gallery } from '@/components/landing/gallery';
 import { Schedule } from '@/components/landing/schedule';
 import { Plans } from '@/components/landing/plans';
 import { Location } from '@/components/landing/location';
@@ -58,9 +57,6 @@ export default async function Home() {
       <Marquee />
       <ScrollReveal>
         <About />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Gallery />
       </ScrollReveal>
       <ScrollReveal>
         <Schedule clases={clases} />
