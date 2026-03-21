@@ -10,7 +10,7 @@ interface GalleryImage {
 
 // Imágenes de la galería — reemplazá los paths por las fotos reales
 const IMAGES: GalleryImage[] = [
-  { src: '/gallery/foto1.jpg', alt: 'Entrenamiento en CRA Training' },
+  { src: '/gallery/logocra.jpeg', alt: 'Entrenamiento en CRA Training' },
   { src: '/gallery/foto2.jpg', alt: 'Clase de CrossFit' },
   { src: '/gallery/foto3.jpg', alt: 'Box de CRA Training' },
   { src: '/gallery/foto4.jpg', alt: 'Atletas entrenando' },
