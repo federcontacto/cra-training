@@ -17,7 +17,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        bebas: ['Bebas Neue', 'sans-serif'],
+        bebas: ['Black Ops One', 'sans-serif'],
         barlow: ['Barlow', 'sans-serif'],
         'barlow-condensed': ['Barlow Condensed', 'sans-serif'],
       },
