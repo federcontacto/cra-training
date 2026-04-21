@@ -4,13 +4,14 @@ import { useEffect, useState } from 'react';
 import { createClient } from '@/lib/supabase-browser';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { Building2, Dumbbell, Clock, CreditCard, LogOut, Zap } from 'lucide-react';
+import { Building2, Dumbbell, Clock, CreditCard, LogOut, Zap, Users } from 'lucide-react';
 
 const NAV_ITEMS = [
-  { href: '/admin/sedes', label: 'Sedes', icon: Building2 },
+  { href: '/admin/sedes', label: 'Sedes & WhatsApp', icon: Building2 },
   { href: '/admin/clases', label: 'Clases', icon: Dumbbell },
   { href: '/admin/horarios', label: 'Horarios', icon: Clock },
   { href: '/admin/planes', label: 'Planes', icon: CreditCard },
+  { href: '/admin/usuarios', label: 'Usuarios', icon: Users },
 ];
 
 export function AdminShell({ children }: { children: React.ReactNode }) {

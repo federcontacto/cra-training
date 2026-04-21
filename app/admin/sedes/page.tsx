@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { createClient } from '@/lib/supabase-browser';
 import type { Sede } from '@/lib/types';
-import { Plus, Pencil, Trash2, Save, X } from 'lucide-react';
+import { Plus, Pencil, Trash2, Save, X, MessageCircle } from 'lucide-react';
 
 const EMPTY_SEDE: Partial<Sede> = {
   nombre: '',
@@ -158,8 +158,12 @@ export default function SedesPage() {
                   )}
                 </div>
                 <p className="text-sm text-cra-gray mt-0.5">
-                  {sede.direccion}{sede.piso ? `, ${sede.piso}` : ''} — WA: {sede.whatsapp}
+                  {sede.direccion}{sede.piso ? `, ${sede.piso}` : ''}
                 </p>
+                <div className="flex items-center gap-1.5 mt-1">
+                  <MessageCircle className="w-3.5 h-3.5 text-cra-green" />
+                  <span className="text-sm font-mono text-cra-green">+{sede.whatsapp}</span>
+                </div>
               </div>
               <div className="flex gap-2 shrink-0">
                 <button onClick={() => { setEditing({ ...sede }); setIsNew(false); }}
